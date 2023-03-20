@@ -11,26 +11,24 @@ import Sports from "./Components/Sports";
 import Technology from "./Components/Technology";
 import { useState } from "react";
 function App() {
-  const [mode,setMode]=useState("light");
+  const [mode, setMode] = useState("light");
   return (
     <>
       <Router>
-        <Navbar mode={mode} setMode={setMode}/>
+        <Navbar mode={mode} setMode={setMode} />
         <div className="adarsh">
-        
-        <Routes>
-          <Route path="/" element={<Home mode={mode} />} />
-          <Route path="/business" element={<Business mode={mode}  />} />
-          <Route path="/science" element={<Science mode={mode} />} />
-          <Route path="/entertainment" element={<Entertainment mode={mode} />} />
-          <Route path="/general" element={<General  mode={mode}/>} />
-          <Route path="/health" element={<Health mode={mode} />} />
-          <Route path="/sports" element={<Sports mode={mode} />} />
-          <Route path="/technology" element={<Technology  mode={mode}/>} />
-        </Routes>
+          {/* <Home mode={mode} /> */}
+          <Routes>
+            <Route path="/" element={<Home mode={mode} />} />
+            <Route path="/business" element={<Business mode={mode} />} />
+            <Route path="/science" element={<Science mode={mode} />} />
+            <Route path="/entertainment" element={<Entertainment mode={mode} />}/>
+            <Route path="/general" element={<General mode={mode} />} />
+            <Route path="/health" element={<Health mode={mode} />} />
+            <Route path="/sports" element={<Sports mode={mode} />} />
+            <Route path="/technology" element={<Technology mode={mode} />} />
+          </Routes>
         </div>
-
-        
       </Router>
     </>
   );
