@@ -14,7 +14,7 @@ function App() {
   const [mode, setMode] = useState("light");
   return (
     <>
-      <Router>
+      
         <Navbar mode={mode} setMode={setMode} />
         <div className="adarsh">
           {/* <Home mode={mode} /> */}
@@ -29,7 +29,7 @@ function App() {
             <Route path="/technology" element={<Technology mode={mode} />} />
           </Routes>
         </div>
-      </Router>
+      
     </>
   );
 }
