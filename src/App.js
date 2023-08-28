@@ -29,7 +29,7 @@ function App() {
             <Route path="/technology" element={<Technology mode={mode} />} />
           </Routes>
         </div>
-     
+
     </>
   );
 }
