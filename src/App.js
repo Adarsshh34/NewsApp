@@ -1,7 +1,7 @@
 import "./App.css";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {  Route, Routes } from "react-router-dom";
 import Business from "./Components/Business";
 import Science from "./Components/Science";
 import Entertainment from "./Components/Entertainment";
